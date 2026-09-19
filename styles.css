@@ -55,3 +55,23 @@
   .article-hero .back-link{margin-bottom:30px}
   .article-hero h1{font-size:3.35rem}
 }
+
+/* Editorial photographs inside the Carlos Castañeda profile */
+.person-photo{
+  margin:44px 0 48px;
+  background:var(--ink);
+  padding:12px 12px 0;
+}
+.person-photo img{
+  display:block;
+  width:100%;
+  height:auto;
+}
+.person-photo figcaption{
+  color:#f8ebda;
+  padding:12px 4px 14px;
+  font:400 .77rem/1.4 Arial,sans-serif;
+}
+@media(max-width:760px){
+  .person-photo{margin:34px 0 40px;padding:8px 8px 0}
+}
