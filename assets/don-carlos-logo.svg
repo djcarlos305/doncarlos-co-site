@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 210" role="img" aria-labelledby="title desc">
+  <title id="title">Don Carlos</title>
+  <desc id="desc">Editorial wordmark for Don Carlos</desc>
+  <g fill="#211411">
+    <circle cx="93" cy="105" r="76" fill="none" stroke="#742a24" stroke-width="7"/>
+    <text x="93" y="126" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="84" font-weight="700" letter-spacing="-8">DC</text>
+    <text x="204" y="73" font-family="Arial, Helvetica, sans-serif" font-size="35" font-weight="700" letter-spacing="18">DON</text>
+    <text x="199" y="153" font-family="Georgia, Times New Roman, serif" font-size="112" font-weight="700" letter-spacing="-9">CARLOS</text>
+    <path d="M205 178H803" stroke="#cb8b44" stroke-width="6"/>
+  </g>
+</svg>
