@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Don Carlos: estilo, cultura y vida para el hombre latino. Historias, música, lugares e ideas desde una mirada panlatina.">
+  <meta name="theme-color" content="#24140f">
+  <link rel="canonical" href="https://doncarlos.co/">
+  <link rel="stylesheet" href="styles.css">
+  <title>Don Carlos | Estilo, cultura y vida para el hombre latino</title>
+</head>
+<body>
+  <div class="topline">DON CARLOS · REVISTA CULTURAL LATINA</div>
+  <header class="masthead">
+    <a class="monogram" href="/" aria-label="Inicio Don Carlos">DC</a>
+    <a class="wordmark" href="/"><span>DON</span> CARLOS</a>
+    <button class="menu-button" type="button" aria-label="Abrir navegación" aria-expanded="false">MENÚ</button>
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="#historias">Historias</a>
+      <a href="#estilo">Estilo</a>
+      <a href="#cultura">Cultura</a>
+      <a href="#vida">Vida</a>
+      <a href="#carlos">El Carlos del Mes</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="kicker">Una revista para conversar</p>
+        <h1>La cultura latina no cabe en una sola bandera.</h1>
+        <p class="intro">Don Carlos celebra las historias, el estilo, la música y las ideas de hombres latinos que hacen las cosas a su manera—desde Miami hasta el resto del mundo.</p>
+        <a class="button" href="#carlos">Conoce al Carlos del Mes <span>→</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <span class="sun"></span><span class="arch arch-one"></span><span class="arch arch-two"></span>
+        <small>ESTILO · CULTURA · VIDA</small>
+      </div>
+    </section>
+
+    <section class="manifesto">
+      <p>Don Carlos no es un país. Es una conversación entre acentos, historias de familia, ambición, música, elegancia y la forma particular en que cada uno aprende a abrirse camino.</p>
+    </section>
+
+    <section class="section" id="historias">
+      <div class="section-heading"><p class="kicker">Historias</p><h2>De aquí y de allá.</h2><a href="#carlos">Ver todas <span>→</span></a></div>
+      <div class="story-grid">
+        <article class="feature-card">
+          <div class="card-art city" aria-hidden="true"><span>MIAMI</span></div>
+          <p class="eyebrow">Identidad</p>
+          <h3>La ciudad que uno lleva aunque ya no viva allí.</h3>
+          <p>Las ciudades de origen cambian, pero hay costumbres, canciones y sabores que viajan con nosotros.</p>
+        </article>
+        <article class="feature-card">
+          <div class="card-art table" aria-hidden="true"><span>EN LA MESA</span></div>
+          <p class="eyebrow">Conversaciones</p>
+          <h3>Lo que aprendimos escuchando a los mayores.</h3>
+          <p>Una mesa familiar puede enseñar tanto sobre carácter como cualquier manual.</p>
+        </article>
+        <article class="feature-card">
+          <div class="card-art record" aria-hidden="true"><span>SONIDO</span></div>
+          <p class="eyebrow">Música</p>
+          <h3>Una canción también puede ser una dirección de regreso.</h3>
+          <p>El ritmo como memoria, oficio y forma de reconocernos.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="carlos-month" id="carlos">
+      <div class="portrait-placeholder" aria-hidden="true"><span>C</span><small>PRIMERA EDICIÓN</small></div>
+      <div>
+        <p class="kicker">El Carlos del Mes</p>
+        <h2>Carlos Espinosa</h2>
+        <p class="role">Miami · Música · Empresa · Reinventarse</p>
+        <p class="intro">La primera conversación presenta a un hombre que ha vivido la noche, la música, los negocios y el desafío constante de volver a empezar con una idea nueva.</p>
+        <a class="button dark" href="#contacto">Leer la entrevista cuando esté lista <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="section split" id="estilo">
+      <div><p class="kicker">Estilo</p><h2>Buen gusto sin pedir permiso.</h2></div>
+      <div><p>Ropa, cuidado personal, relojes, tecnología, interiores y detalles que hacen que uno se sienta listo para la ocasión. Sin pretensión y con identidad propia.</p><a class="text-link" href="#contacto">Próximamente <span>→</span></a></div>
+    </section>
+
+    <section class="section culture" id="cultura">
+      <p class="kicker">Cultura</p>
+      <h2>La música, la calle, la pantalla y las ideas que nos mueven.</h2>
+      <div class="pill-row"><span>Salsa</span><span>Diseño</span><span>Cine</span><span>Viajes</span><span>Tecnología</span><span>Sabores</span></div>
+    </section>
+
+    <section class="section split" id="vida">
+      <div><p class="kicker">Vida</p><h2>El hombre que estás construyendo.</h2></div>
+      <div><p>Trabajo, dinero, familia, amistades, salud, confianza y las decisiones prácticas que sostienen una vida con propósito.</p><a class="text-link" href="#contacto">Próximamente <span>→</span></a></div>
+    </section>
+
+    <section class="newsletter" id="contacto">
+      <p class="kicker">Primera edición</p>
+      <h2>Don Carlos está comenzando.</h2>
+      <p>Muy pronto: nuevas historias, entrevistas y una mirada distinta a la cultura latina.</p>
+      <a class="button" href="mailto:editor@doncarlos.co?subject=Quiero%20recibir%20noticias%20de%20Don%20Carlos">Quiero enterarme <span>→</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <a class="wordmark small" href="/"><span>DON</span> CARLOS</a>
+    <p>Estilo, cultura y vida para el hombre latino.</p>
+    <p>© <span id="year"></span> Don Carlos.</p>
+  </footer>
+  <script>
+    document.getElementById('year').textContent=new Date().getFullYear();
+    const button=document.querySelector('.menu-button'),nav=document.querySelector('.nav');
+    button.addEventListener('click',()=>{const open=nav.classList.toggle('open');button.setAttribute('aria-expanded',open);});
+  </script>
+</body>
+</html>
