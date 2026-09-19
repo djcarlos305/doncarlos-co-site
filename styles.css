@@ -4,3 +4,4 @@
 
 .wordmark img{display:block;width:300px;height:auto}.wordmark.small img{width:165px;filter:brightness(0) invert(1)}@media(max-width:760px){.wordmark img{width:205px}.wordmark.small img{width:145px}}
 \n.article-photo{max-width:1040px;margin:72px auto 0;padding:0 28px}.article-photo img{display:block;width:100%;height:auto}.article-photo figcaption{border-top:1px solid var(--line);padding:10px 0 0;font:400 .77rem/1.4 Arial,sans-serif;color:rgba(33,20,17,.75)}@media(max-width:760px){.article-photo{margin-top:42px;padding:0 20px}}\n
+.farm-photo{margin:44px 0 48px}.farm-photo img{display:block;width:100%;height:auto;box-shadow:0 18px 34px rgba(33,20,17,.16)}.farm-photo figcaption{font:400 .77rem/1.4 Arial,sans-serif;color:rgba(33,20,17,.75);padding:10px 0 0;border-bottom:1px solid var(--line);padding-bottom:12px}@media(max-width:760px){.farm-photo{margin:34px 0 40px}}
