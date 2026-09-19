@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Don Carlos — Concepto de portada</title>
+  <style>
+    :root{--ink:#17100e;--wine:#6f211e;--cream:#f7f0e5;--gold:#d79a50}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;background:var(--cream);color:var(--ink);font-family:Georgia,"Times New Roman",serif}
+    .cover{min-height:100svh;position:relative;isolation:isolate;display:grid;grid-template-rows:auto 1fr auto;overflow:hidden;background:#26130f}
+    .cover:before{content:"";position:absolute;inset:0;z-index:-2;background:url("../assets/images/carlos-castaneda-juan-valdez.jpg") center/cover}
+    .cover:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(27,12,10,.91),rgba(49,20,14,.48) 54%,rgba(23,12,10,.75))}
+    .cover-header{display:flex;justify-content:space-between;align-items:center;padding:28px clamp(22px,5vw,72px);color:#fff6e9;font:700 .66rem Arial,sans-serif;letter-spacing:.15em;text-transform:uppercase}
+    .cover-header a{color:inherit;text-decoration:none}.dc{width:43px;height:43px;border:1px solid rgba(255,246,233,.9);border-radius:50%;display:grid;place-items:center;font-family:Georgia,serif;font-size:1rem;letter-spacing:-.1em}
+    .cover-main{display:grid;place-items:center;padding:45px 22px 28px;text-align:center;color:#fff8ed}
+    .cover-copy{max-width:950px;animation:rise .8s ease both}
+    .edition{margin:0 0 15px;color:#f0bd7b;font:700 .68rem Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase}
+    .brand{margin:0;font-size:clamp(5rem,15vw,13rem);line-height:.62;letter-spacing:-.12em;text-shadow:0 8px 30px rgba(0,0,0,.25)}
+    .brand span{display:block;margin:-.08em 0 0 .09em;font:700 clamp(1.45rem,4.1vw,3.8rem)/1 Arial,sans-serif;letter-spacing:.35em}
+    .cover-copy h1{font-size:clamp(2.25rem,5vw,5rem);line-height:.92;letter-spacing:-.07em;margin:37px auto 17px;max-width:800px}
+    .cover-copy p:last-of-type{font-size:clamp(1.05rem,1.7vw,1.32rem);max-width:580px;margin:0 auto 28px;line-height:1.42}
+    .cta{display:inline-flex;align-items:center;gap:16px;border:1px solid #fff8ed;padding:14px 20px;color:#fff8ed;text-decoration:none;font:700 .68rem Arial,sans-serif;letter-spacing:.13em;text-transform:uppercase;transition:.2s}
+    .cta:hover{background:#fff8ed;color:var(--wine)}.cover-footer{display:flex;justify-content:space-between;align-items:end;padding:24px clamp(22px,5vw,72px);color:#fff7e9;font:700 .63rem Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase}.scroll{opacity:.85}
+    .preview-note{background:var(--gold);padding:13px 22px;text-align:center;font:700 .67rem Arial,sans-serif;letter-spacing:.11em;text-transform:uppercase}
+    .tease{padding:clamp(70px,11vw,150px) clamp(22px,8vw,130px);display:grid;grid-template-columns:1fr 1.25fr;gap:58px;align-items:center}
+    .tease p:first-child{font:700 .68rem Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--wine)}.tease h2{font-size:clamp(3rem,6vw,6.6rem);line-height:.88;letter-spacing:-.08em;margin:10px 0 0}.tease p:last-child{font-size:clamp(1.15rem,2vw,1.55rem);line-height:1.35;margin:0}
+    @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+    @media(max-width:700px){.cover-header{padding:21px 20px}.cover-main{padding-top:28px}.brand{font-size:6.1rem}.brand span{font-size:1.2rem}.cover-copy h1{margin-top:31px}.cover-footer{padding:21px 20px;font-size:.55rem}.tease{grid-template-columns:1fr;gap:26px;padding:78px 22px}}
+  </style>
+</head>
+<body>
+  <div class="preview-note">Concepto de portada — no reemplaza la página actual</div>
+  <main class="cover">
+    <header class="cover-header">
+      <a class="dc" href="../" aria-label="Volver a Don Carlos">DC</a>
+      <span>Estilo · Cultura · Vida</span>
+      <a href="../historia/carlos-castaneda/">Historias</a>
+    </header>
+    <section class="cover-main">
+      <div class="cover-copy">
+        <p class="edition">La revista cultural latina</p>
+        <p class="brand">DON <span>CARLOS</span></p>
+        <h1>La cultura latina no cabe en una sola bandera.</h1>
+        <p>Historias, estilo, música y las ideas que nos hacen reconocernos—desde Miami hasta el resto del mundo.</p>
+        <a class="cta" href="../historia/carlos-castaneda/">Entra a la primera historia <b>↓</b></a>
+      </div>
+    </section>
+    <footer class="cover-footer"><span>Edición 01 · Miami</span><span class="scroll">Desliza para explorar ↓</span></footer>
+  </main>
+  <section class="tease">
+    <div><p>Un Carlos con Historia</p><h2>El hombre detrás de Juan Valdez.</h2></div>
+    <p>Carlos Castañeda fue un caficultor colombiano que llevó el rostro de un país por el mundo. Una historia de café, campo y carácter.</p>
+  </section>
+</body>
+</html>
