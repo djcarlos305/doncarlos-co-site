@@ -3,5 +3,55 @@
 .article-hero{background:var(--wine-dark);color:#fff6e8;min-height:620px;padding:72px max(28px,calc((100vw - var(--max))/2 + 28px));display:grid;grid-template-columns:1.3fr .7fr;gap:44px;align-items:end}.article-hero-copy{max-width:790px}.back-link{display:inline-block;color:#f8e7d0;text-decoration:none;font:700 .7rem Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;margin-bottom:78px}.back-link:hover{color:var(--gold)}.kicker.light{color:#f1be82}.article-hero h1{font-size:clamp(3.5rem,7vw,7.1rem);letter-spacing:-.08em;line-height:.86;margin:0 0 26px}.article-dek{font-size:clamp(1.15rem,2vw,1.45rem);line-height:1.38;max-width:630px;margin:0 0 28px}.article-meta{color:#f1be82;font:700 .68rem Arial,sans-serif;letter-spacing:.13em;margin:0}.article-mark{border:1px solid rgba(247,232,210,.55);min-height:330px;display:grid;place-items:center;position:relative;color:#f1be82;font-size:14rem;font-weight:700;line-height:1}.article-mark small{position:absolute;bottom:18px;left:18px;color:#fff6e8;font:700 .61rem Arial,sans-serif;letter-spacing:.14em}.article-layout{max-width:var(--max);margin:auto;padding:90px 28px 100px;display:grid;grid-template-columns:220px minmax(0,760px);justify-content:center;gap:70px}.article-aside{padding-top:12px;border-top:1px solid var(--ink);font-size:1.04rem;line-height:1.3}.article-aside p{margin:0}.article-body{font-size:1.16rem}.article-body .lead{font-size:clamp(1.35rem,2.4vw,1.8rem);line-height:1.32;letter-spacing:-.02em;margin-top:0}.article-body h2{font-size:clamp(2.1rem,4vw,3.15rem);line-height:.95;letter-spacing:-.06em;margin:62px 0 18px}.article-body p{margin:0 0 23px}.article-body blockquote{border-left:4px solid var(--gold);font-size:clamp(1.45rem,2.5vw,2rem);line-height:1.18;letter-spacing:-.035em;margin:50px 0;padding:4px 0 4px 28px}.article-note{margin:55px 0 34px;padding:26px 28px;background:var(--sand);font-size:.98rem}.article-note .kicker,.sources .kicker{margin-bottom:9px}.article-note p:last-child{margin:0}.sources{border-top:1px solid var(--line);padding-top:24px;font-size:.93rem}.sources ul{padding-left:19px;margin:0}.sources li{margin:8px 0}.sources a{color:var(--wine);text-underline-offset:3px}.next-story{background:#e6d1b6;text-align:center;padding:100px 28px}.next-story h2{font-size:clamp(3rem,5.4vw,5.4rem);line-height:.9;letter-spacing:-.075em;margin:0 0 18px}.next-story p:not(.kicker){font-size:1.15rem;max-width:580px;margin:0 auto 28px}@media(max-width:760px){.article-hero{min-height:0;padding:42px 20px 20px;grid-template-columns:1fr;gap:34px}.back-link{margin-bottom:58px}.article-hero h1{font-size:3.7rem}.article-mark{min-height:230px;font-size:10rem}.article-layout{padding:58px 20px 68px;grid-template-columns:1fr;gap:32px}.article-aside{max-width:420px}.article-body{font-size:1.08rem}.article-body h2{margin-top:48px}.article-body blockquote{padding-left:18px}.next-story{padding:70px 20px}}
 
 .wordmark img{display:block;width:300px;height:auto}.wordmark.small img{width:165px;filter:brightness(0) invert(1)}@media(max-width:760px){.wordmark img{width:205px}.wordmark.small img{width:145px}}
-\n.article-photo{max-width:1040px;margin:72px auto 0;padding:0 28px}.article-photo img{display:block;width:100%;height:auto}.article-photo figcaption{border-top:1px solid var(--line);padding:10px 0 0;font:400 .77rem/1.4 Arial,sans-serif;color:rgba(33,20,17,.75)}@media(max-width:760px){.article-photo{margin-top:42px;padding:0 20px}}\n
+
+.article-photo{max-width:1040px;margin:72px auto 0;padding:0 28px}.article-photo img{display:block;width:100%;height:auto}.article-photo figcaption{border-top:1px solid var(--line);padding:10px 0 0;font:400 .77rem/1.4 Arial,sans-serif;color:rgba(33,20,17,.75)}@media(max-width:760px){.article-photo{margin-top:42px;padding:0 20px}}
+
 .farm-photo{margin:44px 0 48px}.farm-photo img{display:block;width:100%;height:auto;box-shadow:0 18px 34px rgba(33,20,17,.16)}.farm-photo figcaption{font:400 .77rem/1.4 Arial,sans-serif;color:rgba(33,20,17,.75);padding:10px 0 0;border-bottom:1px solid var(--line);padding-bottom:12px}@media(max-width:760px){.farm-photo{margin:34px 0 40px}}
+
+/* Carlos Castañeda feature: centered magazine cover treatment */
+.article-hero{
+  min-height:690px;
+  padding:58px 28px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background:
+    linear-gradient(90deg,rgba(67,22,17,.80),rgba(33,20,17,.58)),
+    url("assets/images/carlos-castaneda-juan-valdez.jpg") center/cover;
+}
+.article-hero-copy{
+  max-width:780px;
+  padding:54px 64px 50px;
+  background:rgba(247,241,231,.96);
+  color:var(--ink);
+  box-shadow:0 24px 60px rgba(0,0,0,.28);
+}
+.article-hero .back-link{
+  color:var(--wine);
+  margin:0 0 42px;
+}
+.article-hero .kicker.light{color:var(--wine)}
+.article-hero h1{
+  color:var(--ink);
+  font-size:clamp(3.4rem,7vw,6.8rem);
+  margin-bottom:24px;
+}
+.article-dek{
+  color:var(--ink);
+  margin-left:auto;
+  margin-right:auto;
+}
+.article-meta{color:var(--wine)}
+.article-mark{display:none}
+.article-layout{
+  padding-top:92px;
+  padding-bottom:102px;
+}
+.article-photo{display:none}
+@media(max-width:760px){
+  .article-hero{min-height:590px;padding:30px 20px;background-position:center}
+  .article-hero-copy{padding:38px 25px 34px}
+  .article-hero .back-link{margin-bottom:30px}
+  .article-hero h1{font-size:3.35rem}
+}
